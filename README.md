@@ -19,11 +19,14 @@ Network calling
 -   Build once and the api key is available throughout the project using `BuildConfig.API_KEY`
 
 ## Screenshots
-[![Explore loading screen](assets/screenshot01.png)]()
-[![Explore screen](assets/screenshot02.png)]()
-[![Search screen](assets/screenshot03.png)]()
-[![View image screen](assets/screenshot04.png)]()
+[![Explore loading screen](assets/screenshot01.png)](assets)
+[![Explore screen](assets/screenshot02.png)](assets)
+[![Search screen](assets/screenshot03.png)](assets)
+[![View image screen](assets/screenshot04.png)](assets)
 
-# APK file
+## Demo video:
+-	[Demo Video](https://drive.google.com/file/d/1urscafKWHLsPNhS8d9olnuPm59BuImek/view?usp=drivesdk)
+
+## APK file
 -   [APK](assets/app-debug.apk)
 
