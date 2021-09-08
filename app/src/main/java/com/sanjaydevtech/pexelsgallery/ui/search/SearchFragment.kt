@@ -23,13 +23,12 @@ class SearchFragment : Fragment() {
         get() = _binding!!
 
     private val viewModel by activityViewModels<MainViewModel>()
-    private val pagingAdapter = PhotoListAdapter(PhotoComparator)
+    private val pagingAdapter by lazy { PhotoListAdapter(requireContext(), PhotoComparator) }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        println("onCreateView")
         _binding = FragmentSearchBinding.inflate(inflater, container, false)
         return binding.root
     }

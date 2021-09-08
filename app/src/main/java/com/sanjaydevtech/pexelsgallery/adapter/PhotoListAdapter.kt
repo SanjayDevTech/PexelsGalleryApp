@@ -1,5 +1,7 @@
 package com.sanjaydevtech.pexelsgallery.adapter
 
+import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.paging.PagingDataAdapter
@@ -9,8 +11,10 @@ import coil.load
 import com.sanjaydevtech.pexelsgallery.R
 import com.sanjaydevtech.pexelsgallery.databinding.LayoutPhotoBinding
 import com.sanjaydevtech.pexelsgallery.model.Photo
+import com.sanjaydevtech.pexelsgallery.ui.view.ViewActivity
 
 class PhotoListAdapter(
+    private val context: Context,
     diffCallback: DiffUtil.ItemCallback<Photo>
 ): PagingDataAdapter<Photo, PhotoListAdapter.PhotoViewHolder>(diffCallback) {
 
@@ -28,7 +32,10 @@ class PhotoListAdapter(
                 }
                 binding.imageView.contentDescription = photo.photographer
                 binding.cardView.setOnClickListener {
-                    println(photo.photographer)
+                    Intent(context, ViewActivity::class.java).apply {
+                        putExtra("photo", photo)
+                        context.startActivity(this)
+                    }
                 }
             }
         }

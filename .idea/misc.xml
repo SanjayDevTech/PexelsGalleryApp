@@ -5,6 +5,7 @@
       <map>
         <entry key="app/src/main/res/drawable/placeholder.xml" value="0.3212890625" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.19479166666666667" />
+        <entry key="app/src/main/res/layout/activity_view.xml" value="0.19479166666666667" />
         <entry key="app/src/main/res/layout/fragment_explore.xml" value="0.19479166666666667" />
         <entry key="app/src/main/res/layout/fragment_search.xml" value="0.19479166666666667" />
         <entry key="app/src/main/res/layout/layout_photo.xml" value="0.1" />
